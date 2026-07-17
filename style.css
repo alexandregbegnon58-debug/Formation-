@@ -1,0 +1,576 @@
+/* ==========================
+   ALEX SERVICE DIGITAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f7f9fc;
+    color:#222;
+}
+
+/* NAVIGATION */
+
+header{
+    width:100%;
+    min-height:100vh;
+    background:linear-gradient(135deg,#003b8e,#005eff,#00bfff);
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo img{
+    width:170px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD400;
+}
+
+.btn-nav{
+    background:#FFD400;
+    color:#003b8e;
+    padding:12px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-nav:hover{
+    transform:translateY(-3px);
+}
+
+/* HERO */
+
+.hero{
+    width:90%;
+    margin:auto;
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:white;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:#f3f3f3;
+    font-size:19px;
+    margin-bottom:35px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    background:#FFD400;
+    color:#003b8e;
+    padding:16px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:520px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+/* SECTIONS */
+
+section{
+    padding:90px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:40px;
+    color:#003b8e;
+    margin-bottom:30px;
+}
+
+#apropos p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:2;
+    font-size:18px;
+}
+
+/* FORMATIONS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:#fff;
+    border-radius:20px;
+    padding:40px 25px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:55px;
+    color:#005eff;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#003b8e;
+}
+
+/* GALERIE */
+
+#galerie{
+    background:#eef5ff;
+    text-align:center;
+}
+
+/* CONTACT */
+
+#contact{
+    background:#003b8e;
+    color:white;
+    text-align:center;
+}
+
+#contact h2{
+    color:white;
+}
+
+#contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+#contact i{
+    color:#FFD400;
+    margin-right:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#001b45;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin:20px 0;
+    text-align:center;
+}
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+
+.hero-text p{
+    font-size:17px;
+}
+
+.logo img{
+    width:140px;
+}
+
+}/* ===========================
+WHATSAPP
+=========================== */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:35px;
+
+color:white;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+
+/* ===========================
+RETOUR EN HAUT
+=========================== */
+
+#topBtn{
+
+position:fixed;
+
+bottom:105px;
+
+right:28px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#FFD400;
+
+color:#003b8e;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+#topBtn:hover{
+
+transform:scale(1.1);
+
+}/*=========================
+INSCRIPTION
+==========================*/
+
+.inscription{
+
+padding:80px 10%;
+
+background:#f4f8ff;
+
+min-height:100vh;
+
+}
+
+.inscription h1{
+
+text-align:center;
+
+font-size:45px;
+
+color:#003b8e;
+
+margin-bottom:10px;
+
+}
+
+.inscription p{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+form{
+
+max-width:700px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+form input,
+form select,
+form textarea{
+
+padding:18px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:16px;
+
+font-family:Poppins,sans-serif;
+
+}
+
+form textarea{
+
+height:160px;
+
+resize:none;
+
+}
+
+form button{
+
+padding:18px;
+
+border:none;
+
+background:#003b8e;
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+form button:hover{
+
+background:#FFD400;
+
+color:#003b8e;
+
+}/*=========================
+POURQUOI NOUS CHOISIR
+==========================*/
+
+#avantages{
+    background:#ffffff;
+}
+
+.avantages-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.avantage{
+    background:#ffffff;
+    padding:35px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.avantage:hover{
+    transform:translateY(-10px);
+}
+
+.avantage i{
+    font-size:55px;
+    color:#005eff;
+    margin-bottom:20px;
+}
+
+.avantage h3{
+    color:#003b8e;
+    margin-bottom:15px;
+}
+
+.avantage p{
+    color:#555;
+    line-height:1.7;
+}/*=========================
+STATISTIQUES
+==========================*/
+
+#statistiques{
+    background:linear-gradient(135deg,#003b8e,#005eff);
+    color:white;
+    text-align:center;
+}
+
+#statistiques h2{
+    color:white;
+    margin-bottom:50px;
+}
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.stat{
+    background:rgba(255,255,255,.1);
+    padding:35px;
+    border-radius:20px;
+    backdrop-filter:blur(5px);
+}
+
+.stat h3{
+    font-size:50px;
+    color:#FFD400;
+    margin-bottom:10px;
+}
+
+.stat p{
+    font-size:18px;
+}/*=========================
+GALERIE
+==========================*/
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.gallery-item{
+
+overflow:hidden;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.gallery-item img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+transition:.5s;
+
+display:block;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.12);
+
+}.whatsapp-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.whatsapp-contact a:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
